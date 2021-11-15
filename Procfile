@@ -1,1 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT appBDD:app
+web: python start_local_server.py
+worker: python start_local_server.py 
