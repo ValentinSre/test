@@ -1,1 +1,1 @@
-web: python3 start_local_server.py
+web: python star_local_server.py runserver 0.0.0.0:5000
