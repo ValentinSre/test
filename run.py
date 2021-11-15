@@ -11,7 +11,7 @@ def hello():
     
 def run():
     os.chdir("./")
-    port = 8080
+    port = os.environ.get("PORT", 8000)
     http.server.SimpleHTTPRequestHandler.extensions_map[".wasm"] = "application/wasm"
     httpd = http.server.HTTPServer(("localhost", port), http.server.SimpleHTTPRequestHandler)
     print("Running on port %d" % port)

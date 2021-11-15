@@ -1,2 +1,2 @@
-web: python start_local_server.py
-worker: python start_local_server.py 
+web: gunicorn app:app
+web: gunicorn run:app
