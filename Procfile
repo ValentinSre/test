@@ -1,1 +1,1 @@
-web: python start_local_server.py
+web: gunicorn start_local_server.py
