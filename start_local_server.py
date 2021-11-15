@@ -5,7 +5,7 @@ import os
 
 # We need to host from the root because we are going to be requesting files inside of dist
 os.chdir("./")
-port = os.environ.get('PORT', 8080)
+port = 8080
 print("Running on port %d" % port)
 
 http.server.SimpleHTTPRequestHandler.extensions_map[".wasm"] = "application/wasm"
