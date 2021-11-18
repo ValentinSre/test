@@ -41,7 +41,7 @@ SELECT name,hired_on FROM employees ORDER BY hired_on;</textarea>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/sql/sql.min.js"></script>
 
-  <script type="module" src="/static/js/index.js"></script>
+
   <script>
   var execBtn = document.getElementById("execute");
 var outputElm = document.getElementById('output');
@@ -51,7 +51,7 @@ var dbFileElm = document.getElementById('dbfile');
 var savedbElm = document.getElementById('savedb');
 
 // Start the worker in which sql.js will run
-var worker = new Worker("/static/js/worker.sql-wasm.js");
+var worker = new Worker("/static/js/sql/worker.sql-wasm.js");
 worker.onerror = error;
 
 // Open a database
